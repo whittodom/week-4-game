@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Infinity Stones</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+
+</head>
+<body>
+	<!--Title Section-->
+	<div class="jumbotron">
+		<h1 class="text-center">Crystal Collector: Infinity Stones</h1>
+	</div>
+
+	<div class="container">
+		<!--Infinity Stones-->
+		<div class="row">
+			<div class="btn-group btn-group-justified">
+				<div class="col-md-2"><!--empty for spacing--></div>
+				<div class="col-md-2">
+					<div class="btn-group">
+						<button type="button" class="btn btn-default" id="mind-stone">
+					    	<img class="media-object" src="assets/images/mind-stone.png" alt="mind stone">
+					    </button>	
+					</div>				
+				</div>
+				<div class="col-md-2">
+					<div class="btn-group">
+						<button type="button" class="btn btn-default" id="power-stone">
+					    	<img class="media-object" src="assets/images/power-stone.png" alt = "power stone">	
+					    </button>
+					</div>				
+				</div>
+				<div class="col-md-2">
+					<div class="btn-group">
+						<button type="button" class="btn btn-default" id="space-stone">
+					    	<img class="media-object" src="assets/images/space-stone.png" alt = "space stone">
+					    </button>	
+					</div>		
+				</div>
+				<div class="col-md-2">
+					<div class="btn-group">
+						<button type="button" class="btn btn-default" id="time-stone">
+					    	<img class="media-object" src="assets/images/time-stone.png" alt="time stone">
+					    </button>		
+					</div>				
+				</div>
+				<div class="col-md-2"><!--empty for spacing--></div>
+			</div>		
+		</div>
+
+		<div class="row">
+			<!--Instructions Section-->
+			<div class="col-md-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Instructions</h3>
+					</div>
+					<div class="panel-body">
+						<p>You will be given a random number at the start of each round.</p>
+						<p>There are four Infinity Stones below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+						<p>You win the game by matching your total score to the random number. If your total score goes above the random number, you lose.</p>
+						<p>The value of each crystal is hidden from you until you click on it.</p>
+						<p>The points alloted to each stone are randomly chosen at the beginning of each round.</p>
+					</div>
+				</div>
+			</div>
+
+			<!--Game Section-->
+			<div class="col-md-8">
+				<div class="section">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="panel panel-success">
+								<div class="panel-heading">
+									<h3 class="panel-title">Your total score is: </h3>
+								</div>
+								<div class="panel-body">
+									<span id="score"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="panel panel-danger">
+  								<div class="panel-body">
+  									<h3><span id="random-number"></span></h3>
+ 					 			</div>
+							</div>					
+						</div>
+						<div class="col-md-4">
+							<div class="panel panel-warning">
+  								<div class="panel-body">
+  									<h2><span id="message"></span></h2>	
+  									<h2>Wins: <span id="wins"></span></h2>
+  									<h2>Losses: <span id="losses"></span></h2>				
+ 					 			</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
